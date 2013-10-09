@@ -14,6 +14,10 @@ def fixed_point(first_guess, tolerance, &f)
   try[first_guess]
 end
 
+
+
+
+
 def loggy_problem_no_damping
   fixed_point(2, 0.01) do |x|
     Math.log(1000)/Math.log(x)
